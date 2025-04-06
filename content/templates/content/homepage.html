@@ -1,16 +1,31 @@
 {% extends "content/base.html" %}
 
-
 {% block header %}
-    Book Library
+   📚 Book Library
 {% endblock %}
 
-
 {% block main %}
-    {% for article in articles %}
-        <a href="/article/{{ article.id }}"><h2>{{ article.title }}</h2></a>
-        
-        <p>{{ article.date }}</p>
-        <p>{{ article.perex }}</p>
-    {% endfor %}
+    <div class="card-container">
+        {% for article in articles %}
+            <div class="card">
+                <a href="/article/{{ article.id }}">
+                    <div class="card-content">
+                        <h3>{{ article.title }}</h3>
+                        <p class="author">
+                            <strong>Author:</strong> {{ article.author.name }}
+                        </p>
+                        <p>{{ article.perex }}</p>
+                        <p class="date">{{ article.date }}</p>
+                        <div class="categories">
+                            <strong>Categories:</strong>
+                            {% for category in article.categories.all %}
+                                <span>{{ category.name }}</span>
+                            {% endfor %}
+                        </div>
+                        <button class="btn">Read More</button>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
