@@ -1,10 +1,10 @@
-[
+ [
     {
         "model": "content.author",
         "pk": 1,
         "fields": {
             "name": "George Orwell",
-            "bio": "George Orwell était un écrivain et journaliste britannique, connu pour ses romans tels que 1984 et La Ferme des animaux."
+            "bio": "George Orwell byl britský spisovatel a novinář, známý pro své romány jako 1984 a Farma zvířat."
         }
     },
     {
@@ -12,15 +12,15 @@
         "pk": 2,
         "fields": {
             "name": "Jane Austen",
-            "bio": "Jane Austen était une romancière anglaise, surtout connue pour ses romans tels que Orgueil et Préjugés."
+            "bio": "Jane Austen byla anglická spisovatelka, známá především svými romány jako Pýcha a předsudek."
         }
     },
     {
         "model": "content.category",
         "pk": 1,
         "fields": {
-            "name": "Roman",
-            "description": "Les romans sont des œuvres de fiction étendues, mettant souvent l'accent sur le développement des personnages et de l'intrigue."
+            "name": "Román",
+            "description": "Romány jsou rozsáhlejší beletristická díla, často s důrazem na vývoj postav a příběhu."
         }
     },
     {
@@ -28,15 +28,15 @@
         "pk": 2,
         "fields": {
             "name": "Dystopie",
-            "description": "La littérature dystopique décrit des sociétés avec des aspects négatifs et met en garde contre l'avenir."
+            "description": "Dystopická literatura zobrazuje společnost s negativními aspekty a varuje před budoucností."
         }
     },
     {
         "model": "content.category",
         "pk": 3,
         "fields": {
-            "name": "Classique",
-            "description": "La littérature classique regroupe des œuvres intemporelles qui ont résisté à l’épreuve du temps."
+            "name": "Klasika",
+            "description": "Klasická literatura zahrnuje nadčasová díla, která obstála ve zkoušce času."
         }
     },
     {
@@ -44,8 +44,8 @@
         "pk": 1,
         "fields": {
             "title": "1984",
-            "perex": "1984 est un roman dystopique de George Orwell qui décrit un régime totalitaire et le contrôle de la pensée.",
-            "content": "C’était une journée claire et froide d’avril, et les horloges sonnaient treize heures. Winston Smith, le menton enfoncé dans la poitrine, tenta d’échapper au vent mauvais et entra rapidement dans l’immeuble Victory Mansions...",
+            "perex": "1984 je dystopický román George Orwella, který popisuje totalitní režim a kontrolu myšlení.",
+            "content": "Byl jasný a chladný dubnový den a hodiny odbíjely třináctou. Winston Smith, bradou zabořený do hrudi, se pokusil uniknout protivnému větru a rychle vkročil do paneláku Victory Mansions...",
             "date": "1949-06-08",
             "author": 1,
             "counter": 0,
@@ -59,9 +59,9 @@
         "model": "content.article",
         "pk": 2,
         "fields": {
-            "title": "Orgueil et Préjugés",
-            "perex": "Orgueil et Préjugés est un roman romantique de Jane Austen qui aborde les questions d’amour, de différences sociales et de mariage.",
-            "content": "Il est universellement reconnu qu’un homme célibataire possédant une grande fortune doit avoir besoin d’une épouse. C’est ainsi que l’arrivée de M. Bingley à Netherfield devient le centre de toutes les attentions...",
+            "title": "Pýcha a předsudek",
+            "perex": "Pýcha a předsudek je romantický román od Jane Austenové, který se zabývá otázkami lásky, třídních rozdílů a manželství.",
+            "content": "Je obecně uznáváno, že svobodný muž, který vlastní nemalý majetek, musí mít potřebu po ženě. A právě když pan Bingley přijíždí do Netherfieldu, stává se centrem pozornosti místní společnosti...",
             "date": "1813-01-28",
             "author": 2,
             "counter": 0,
@@ -75,9 +75,9 @@
         "model": "content.article",
         "pk": 3,
         "fields": {
-            "title": "La Ferme des animaux",
-            "perex": "La Ferme des animaux est un roman allégorique de George Orwell qui critique le totalitarisme et l’abus de pouvoir.",
-            "content": "Tous les animaux de la ferme se révoltent contre leur maître dans l'espoir de créer une société égalitaire. Mais au fil du temps, il devient évident que certains sont plus égaux que d’autres...",
+            "title": "Farma zvířat",
+            "perex": "Farma zvířat je alegorický román George Orwella, který kritizuje totalitarismus a zneužívání moci.",
+            "content": "Všechny zvířata na farmě se vzbouří proti svému pánovi a snaží se vytvořit rovnostářskou společnost. Ale jak čas plyne, ukazuje se, že někteří jsou si rovnější než jiní...",
             "date": "1945-08-17",
             "author": 1,
             "counter": 0,
@@ -92,8 +92,8 @@
         "pk": 4,
         "fields": {
             "title": "Emma",
-            "perex": "Emma est un roman de Jane Austen qui suit une jeune femme jouant les entremetteuses pour les autres.",
-            "content": "Emma Woodhouse, une jeune femme riche et de haute position sociale, décide de devenir marieuse pour son amie Harriet Smith. Mais ses projets se compliquent rapidement...",
+            "perex": "Emma je román od Jane Austenové, který se zaměřuje na mladou ženu, která se snaží hrát dohazovačku pro ostatní.",
+            "content": "Emma Woodhouse, mladá žena s vysokým postavením a bohatstvím, se rozhodne, že se stane dohazovačkou pro svou přítelkyni Harriet Smithovou. Ale její plány se brzy zkomplikují...",
             "date": "1815-12-23",
             "author": 2,
             "counter": 0,
@@ -107,9 +107,9 @@
         "model": "content.article",
         "pk": 5,
         "fields": {
-            "title": "Les Hauts de Hurlevent",
-            "perex": "Les Hauts de Hurlevent est un roman d’Emily Brontë qui traite de passion, de vengeance et de tragédie.",
-            "content": "Les Hauts de Hurlevent raconte l’histoire d’amour et de haine entre Heathcliff et Catherine Earnshaw. Leur relation passionnée a des conséquences tragiques pour tous ceux qui les entourent...",
+            "title": "Na větrné hůrce",
+            "perex": "Na větrné hůrce je román od Emily Brontë, který se zabývá vášní, pomstou a tragédií.",
+            "content": "Na větrné hůrce je příběh o lásce a nenávisti mezi Heathcliffem a Catherine Earnshawovou. Jejich vášnivý vztah má tragické následky pro všechny zúčastněné...",
             "date": "1847-12-01",
             "author": 2,
             "counter": 0,
@@ -118,14 +118,14 @@
                 3
             ]
         }
-    },
+    }, 
     {
         "model": "content.article",
         "pk": 6,
         "fields": {
-            "title": "Contes des frères Grimm",
-            "perex": "Les contes des frères Grimm sont une collection de contes allemands avec des leçons morales et des éléments fantastiques.",
-            "content": "Les frères Grimm ont collecté et publié des contes populaires qui sont devenus des classiques. Parmi les plus connus, on retrouve Blanche-Neige, Cendrillon et Le Petit Chaperon Rouge.",
+            "title": "Pohádky bratří Grimmů",
+            "perex": "Pohádky bratří Grimmů jsou sbírkou německých pohádek, které obsahují morální ponaučení a fantastické prvky.",
+            "content": "Bratři Grimmové shromáždili a publikovali lidové pohádky, které se staly klasikou. Mezi nejznámější patří Sněhurka, Popelka a Červená Karkulka.",
             "date": "1812-12-20",
             "author": 2,
             "counter": 0,
@@ -139,58 +139,10 @@
         "model": "content.article",
         "pk": 8,
         "fields": {
-            "title": "Contes du monde entier",
-            "perex": "Les contes du monde entier sont une collection d’histoires issues de différentes cultures, mêlant morale et éléments fantastiques.",
-            "content": "Ces contes viennent des quatre coins du monde et reflètent la diversité des cultures et des traditions humaines. Ils racontent des aventures de héros, de magie et de voyages extraordinaires.",
+            "title": "Pohádky z celého světa",
+            "perex": "Pohádky z celého světa jsou sbírkou příběhů z různých kultur, které obsahují morální ponaučení a fantastické prvky.",
+            "content": "Tyto pohádky pocházejí z různých koutů světa a ukazují rozmanitost lidské kultury a tradic. Obsahují příběhy o hrdinech, kouzlech a dobrodružstvích.",
             "date": "2023-10-01",
-            "author": 2,
-            "counter": 0,
-            "categories": [
-                1,
-                3
-            ]
-        }
-    },
-    {
-        "model": "content.article",
-        "pk": 9,
-        "fields": {
-            "title": "Les contes de fées modernes",
-            "perex": "Les contes de fées modernes sont des histoires contemporaines qui s'inspirent des contes traditionnels tout en abordant des thèmes actuels.",
-            "content": "Ces contes mélangent le fantastique et la réalité, abordant des sujets comme l'identité, l'amour et la quête de soi dans un monde moderne.",
-            "date": "2023-10-02",
-            "author": 2,
-            "counter": 0,
-            "categories": [
-                1,
-                3
-            ]
-        }
-    },
-    {
-        "model": "content.article",
-        "pk": 10,
-        "fields": {
-            "title": "Les contes de fées du monde entier",
-            "perex": "Les contes de fées du monde entier sont une collection d'histoires issues de différentes cultures, mêlant morale et éléments fantastiques.",
-            "content": "Ces contes viennent des quatre coins du monde et reflètent la diversité des cultures et des traditions humaines. Ils racontent des aventures de héros, de magie et de voyages extraordinaires.",
-            "date": "2023-10-03",
-            "author": 2,
-            "counter": 0,
-            "categories": [
-                1,
-                3
-            ]
-        }
-    },
-    {
-        "model": "content.article",
-        "pk": 11,
-        "fields": {
-            "title": "Les contes de fées et la psychologie",
-            "perex": "Les contes de fées et la psychologie explorent comment ces histoires influencent notre développement émotionnel et psychologique.",
-            "content": "Ces contes offrent des leçons sur la vie, l'amour et la moralité, tout en aidant à comprendre les émotions humaines et les relations interpersonnelles.",
-            "date": "2023-10-04",
             "author": 2,
             "counter": 0,
             "categories": [
