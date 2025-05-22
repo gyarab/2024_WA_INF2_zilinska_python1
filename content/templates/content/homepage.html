@@ -1,11 +1,17 @@
 {% extends "content/base.html" %}
 
-{% block header %}
+<!-- {% block header %}
    📚 Book Library
+{% endblock %} -->
+
+{% block header %}
+    <h1>📚 Book Library</h1>
+    <p>Welcome to the Book Library! Explore our collection of articles.</p>
 {% endblock %}
 
-
-
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'content/css/homepage.css' %}">
+{% endblock %}
 
 {% block main %}
     <div class="card-container">
